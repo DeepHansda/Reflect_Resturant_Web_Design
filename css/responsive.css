@@ -1,0 +1,153 @@
+@media  only screen and (min-width:360px){
+
+#text p{
+
+    font-size: 70px;
+}
+
+
+nav #bar{
+    /* display:flex; */
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    position: absolute;
+    top:247px;
+    left:0;
+    background-color: #fff;
+    width:100vw;
+    height: 200px;
+    display: none;
+}
+
+.openbutton{
+    align-self: flex-start;
+    margin: 5px;
+}
+ 
+
+.closebutton{
+    align-self: flex-start;
+    margin: 5px;
+    display:none;
+}
+
+    #four{
+        flex-direction: column;
+    }
+
+    .det{
+        text-align:left;
+    }
+
+
+#three .cake-container #cake-box{
+
+    grid-template-columns:repeat(2,1fr);
+    grid-gap: 10px;
+    width: 70%;
+    margin: 10px;
+}
+
+#three{
+    height:100vh;
+}
+
+.four .details .det{
+    font-size: 12px;
+}
+    
+}
+
+
+@media only screen and (min-width:600px){
+    #three .cake-container #cake-box{
+
+        grid-template-columns:repeat(2,1fr);
+        grid-gap: 10px;
+        width: 60%;
+        margin: 10px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 768px){
+
+    nav #bar{
+        /* display:flex; */
+        justify-content:center;
+        align-items:center;
+    }
+
+    #text p{
+
+        font-size: 100px;
+    }
+    #three .cake-container #cake-box{
+
+        grid-template-columns:repeat(4,1fr);
+        grid-gap: 10px;
+        width: 90%;
+        margin: 10px;
+    }
+
+
+    #four{
+        flex-direction: row;
+    }
+
+
+    #three{
+        height:60vh;
+    }
+
+    .four .details .det{
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 1280px){
+
+    .openbutton,.closebutton{display:none;}
+
+    nav #bar{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:row;
+        height:0;
+        padding:20px;
+    }
+   
+    #text p{
+
+        font-size: 150px;
+    }
+    #three{
+        height:100vh;
+    }
+}
+
+
+@media only screen and (min-width: 1920px){
+    nav #bar{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+   
+
+    #three .cake-container #cake-box{
+
+        grid-template-columns:repeat(4,1fr);
+        grid-gap: 20px;
+        width: 60%;
+        margin: 10px;
+    }
+    #three{
+        height:100vh;
+    }
+}

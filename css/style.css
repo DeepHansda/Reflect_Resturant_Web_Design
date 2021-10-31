@@ -1,0 +1,357 @@
+:root{
+  --orange:#ff402d;
+  --black:#000000;
+  --white:#ffffff;
+  --transparent-white:rgba(255, 255, 255, 0.6);
+  --red:red;
+  
+}
+
+*{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    border:none;
+    box-sizing: border-box;
+
+
+}
+body{
+    scroll-behavior: smooth;
+   
+}
+
+#one{
+    background-image: url('../img/elegant-decorated-christmas-table-setting-with-modern-cutlery-napkin-bow-christmas-decorations-christmas-menu-concept-closeup-horizontal.jpg');
+    max-width:100vw;
+    height:100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+
+}
+
+nav{
+    width:100vw;
+    height:250px;
+    background-color:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction:column;
+    position:fixed;
+    z-index: 100;
+    scroll-behavior: smooth;
+}
+
+nav #logo{
+    max-width:200px;
+    padding-top:15px;
+}
+
+nav #bar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+nav ul li{
+    padding:5px 32px;
+    cursor: pointer;
+
+}
+
+nav ul li a{
+    font-family:'Franklin Gothic Medium';
+    text-transform:uppercase;
+    text-decoration:none;
+    color:darkgrey;
+}
+
+nav ul li a:hover{
+    color:#ff402d;
+}
+
+
+#cf{
+    color:#ff402d;
+}
+
+
+.drop{
+    display:block;
+    position:absolute;
+    width:150px;
+    height:200px;
+    background-color:#ffffff;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition:all ease-out 0.7s;
+    z-index: 1;
+    top:-400px;
+    opacity: 0;
+    
+}
+
+
+.drop-container{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  margin: 40px 0px;
+}
+
+.drop-container li{
+  margin: 5px 0;
+}
+
+
+
+
+
+
+nav ul li:hover .drop{
+    opacity: 1;
+    top:44px;
+
+    
+}
+
+
+#text{
+  margin-top: 400px;
+  z-index: 1;
+  
+}
+#text p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size:150px;
+    font-weight: 100;
+    letter-spacing: 4mm;
+    
+
+}
+
+#st {
+    display:block;
+    position:absolute;
+    bottom: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space:nowrap;
+  }
+
+#st .card{
+    display: inline-block;
+  
+}
+
+.slidebox-container{
+  width: 100%;
+  height:50vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.Slidebox{
+  width:100%;
+	height: 100vh;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+
+.box .img{
+  height: 340px;
+	position:relative;
+  transition: 0.5s;
+}
+
+.box .img img{
+  width:100%;
+}
+
+.see {
+  visibility: hidden;
+  position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width:100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.62);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.see a{
+  
+  font-family: arial;
+  text-decoration: none;
+  color:#ff402d;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.see a:hover{
+  color:#ffffff;
+  background-color:#ff402d;
+  padding:5px 30px;
+  border-radius: 30px;
+}
+
+
+.box .img:hover .see{
+  visibility: visible;
+  animation-name: fade 0.5s;
+}
+
+#text2{
+  font-family: arial;
+  text-align:center;
+  color:#ff402d;
+  font-size: 40px;
+  top:40px;
+}
+
+#text2 h1{
+  margin-top:90px;
+}
+
+
+
+@keyframes fade {
+  0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+/* .box:hover .see h1 a{
+  visibility: visible;
+} */
+
+#three{
+  background-image: url('../img/kevin-grieve-Q-5COoD1k4I-unsplash.jpg');
+  max-width:100vw;
+  height:100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+ 
+}
+.food h1{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:60px;
+  color:#ffffff;
+}
+#three{
+  width:100%;
+  height:80vh;
+  text-align:center;
+  margin-top:40px;
+
+}
+
+#three .cake-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+
+}
+
+#three .cake-container #cake-box{
+  width:60%;
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-auto-rows: 1fr;
+  grid-gap: 20px;
+
+
+}
+
+.dare .xd img{
+  max-width:100%;
+}
+
+
+
+
+#four{
+  display:flex;
+  align-items:center;
+  justify-content:space-between
+}
+
+#table {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  margin:15px;
+}
+
+
+
+input{
+  font-family: 'Franklin Gothic Medium';
+  width:300px;
+  height:35px;
+  background-color: #303030;
+  outline: none;
+  color: #ffffff;
+  border-radius:5px;
+  margin:10px 0px;
+  text-align: center;
+  transition: 0.3s linear;
+}
+input:hover{
+  padding-right: 15px;
+}
+textarea{
+  font-family: 'Franklin Gothic Medium';
+  width: 300px;
+  height:200px;
+  background-color: #303030;
+
+  outline: none;
+  color: #ffffff;
+  border-radius:5px;
+  padding-left:10px;
+  transition: 0.3s linear;
+}
+textarea:hover{
+  padding-right: 15px;
+}
+
+button{
+  padding: 10px 30px;
+  font-family: 'Franklin Gothic Medium';
+  text-transform: uppercase;
+  background-color: red;
+  color: #ffffff;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;;
+}
+
+
+.four .details{
+  /* width:50%; */
+  width: 50vw;
+  margin-top: 20px;
+}
+
+.four .details .det{
+  text-transform: capitalize;
+  text-align:left;
+}
